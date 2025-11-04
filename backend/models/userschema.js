@@ -21,13 +21,20 @@ password:{
     required:true,
     type:String
 },
+token:{
+    type:String
+},
+otp:{
+type:Number
+},
+tokenExpiry:{
+type:Date
+},
 role:{
   type:String,
   enum:["user","owner","delivery"],
   required:true
 }
-
-
 })
 
 const User=mongoose.model('User',user);
